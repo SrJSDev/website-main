@@ -5,6 +5,7 @@
   }
 </script>
 
+<h4>Interactive v2.0 👇</h4>
 <button on:click={increment}>
-  count is {count}
+  Count is: {count}
 </button>
