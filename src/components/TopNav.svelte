@@ -23,6 +23,7 @@
     li {
         list-style: none;
         padding: .2rem;
+        cursor: pointer;
     }
 
     li::after {
