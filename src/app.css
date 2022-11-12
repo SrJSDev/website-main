@@ -37,6 +37,14 @@ h1 {
   line-height: 1.1;
 }
 
+h1, h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.code {
+  font-family: 'Roboto Mono', monospace;
+}
+
 .card {
   padding: 2em;
 }
