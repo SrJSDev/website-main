@@ -1,6 +1,10 @@
 <script lang="ts">
-  import Counter from '../components/Counter.svelte'
-  import TopNav from '../components/TopNav.svelte'
+  import Counter from "../components/Counter.svelte";
+  import TopNav from "../components/TopNav.svelte";
+
+  import animate from "../libs/animate";
+
+  setTimeout(() => animate(".read-the-docs"), 100);
 </script>
 
 <main>
@@ -9,48 +13,54 @@
   <h1>Welcome to</h1>
   <h1>Sr. JS Dev</h1>
 
-  Hi 👋!<br/>
+  Hi 👋!<br />
   <a href="https://srjs.dev" target="_blank" rel="noreferrer">
     <img
       src="/mug-small-transparent-rounded.webp"
-      class="mug-shot svelte" alt="author mug-shot"
+      class="mug-shot svelte"
+      alt="author mug-shot"
     />
   </a>
 
   <section class="top-intro code">
-      <h2>Who Am I?</h2>
-      I'm an online educator,<br/>
-      mentor,<br/>
-      and consultant--<br/>
-      teaching practical,<br/>
-      advanced topics<br/>
-      to people like you on<br/>
-      how to write:<br/>
-      ✅ maintainable JS code<br/>
-      ✅ scalable web apps<br/>
-      ...yup that's about it! 🎤⤵<br/>
+    <h2>Who Am I?</h2>
+    I'm an online educator,<br />
+    mentor,<br />
+    and consultant--<br />
+    teaching practical,<br />
+    advanced topics<br />
+    to people like you on<br />
+    how to write:<br />
+    ✅ maintainable JS code<br />
+    ✅ scalable web apps<br />
+    ...yup that's about it! 🎤⤵<br />
   </section>
 
   <div class="card">
     <Counter />
   </div>
 
-  <p class="read-the-docs">
-    Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank" rel="noreferrer">SvelteKit</a>!
+  <p class="read-the-docs hidden">
+    Check out <a
+      href="https://github.com/sveltejs/kit#readme"
+      target="_blank"
+      rel="noreferrer">SvelteKit</a
+    >!
   </p>
 </main>
 
 <style>
   section.top-intro {
-      max-width: 50vw;
-      margin: 0 auto;
-      text-align: right;
+    max-width: 50vw;
+    margin: 0 auto;
+    text-align: right;
+    transform: translateX(-25%);
   }
   .mug-shot {
     height: 6em;
     padding: 1.5em;
     will-change: filter;
-    transition: .5s all;
+    transition: 0.5s all;
   }
   .mug-shot:hover {
     filter: drop-shadow(0 0 2em #ddd);

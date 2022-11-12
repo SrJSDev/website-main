@@ -3,11 +3,11 @@
 
 <nav>
     <ul class="links">
-        <li><a href="/">Home<a/></li>
-        <li><a href="/about">About<a/></li>
-        <li><a href="/blog">Blog<a/></li>
-        <li><a href="https://www.youtube.com/channel/UClu80kwRi7KVUherGeilGQQ">YouTube<a/></li>
-        <li><a href="/news-letter">News Letter<a/></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="https://www.youtube.com/channel/UClu80kwRi7KVUherGeilGQQ">YouTube</a></li>
+        <li><a href="/news-letter">News Letter</a></li>
     </ul>
 </nav>
 
