@@ -19,7 +19,7 @@
 
   <section class="top-intro code">
       <h2>Who Am I?</h2>
-      I'm an Online educator,<br/>
+      I'm an online educator,<br/>
       mentor,<br/>
       and consultant--<br/>
       teaching practical,<br/>
