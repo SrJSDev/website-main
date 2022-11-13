@@ -1,10 +1,17 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+
   import Counter from "../components/Counter.svelte";
   import TopNav from "../components/TopNav.svelte";
 
   import animate from "../libs/animate";
 
-  setTimeout(() => animate(".read-the-docs"), 100);
+  let readTheDocsEl;
+
+  onMount(() => {
+      // animate(".read-the-docs");
+      animate(readTheDocsEl);
+  })
 </script>
 
 <main>
@@ -40,7 +47,7 @@
     <Counter />
   </div>
 
-  <p class="read-the-docs hidden">
+  <p class="read-the-docs hidden" bind:this={readTheDocsEl}>
     Check out <a
       href="https://github.com/sveltejs/kit#readme"
       target="_blank"
