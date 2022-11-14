@@ -29,14 +29,14 @@
     />
   </a>
 
-  <section class="top-intro code">
+  <section class="top-intro font-code">
     <h2>Who Am I?</h2>
     I'm an online educator,<br />
     mentor,<br />
     and consultant--<br />
     teaching practical,<br />
     advanced topics<br />
-    to people like you on<br />
+    to developers like you on<br />
     how to write:<br />
     ✅ maintainable JS code<br />
     ✅ scalable web apps<br />
