@@ -6,7 +6,6 @@ const observer = new IntersectionObserver((entries, self) => {
     entries.forEach((element, i) => {
         const { isIntersecting, target, intersectionRatio } = element
         console.log(i, { isIntersecting, target, intersectionRatio });
-        console.log(i, );
         target.classList.toggle('show', isIntersecting);
     })
 }, options);
@@ -14,8 +13,10 @@ const observer = new IntersectionObserver((entries, self) => {
 export default function observe(...targets: string[] | any[]) {
     targets.forEach(target => {
         if (typeof target === 'string') {
-            target = document.querySelector(target)
+            target = [...document.querySelectorAll(target)]
         }
-        if (target) observer.observe(target)
+        [].concat(target).forEach((t: any) => {
+            if (t) observer.observe(t)
+        })
     })
 }
