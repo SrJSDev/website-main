@@ -3,81 +3,59 @@
 
   import Counter from "../components/Counter.svelte";
   import TopNav from "../components/TopNav.svelte";
+  import WhoAmI from '../components/WhoAmI.svelte';
+  import WinWin from '../components/WinWin.svelte';
 
   import animate from "../libs/animate";
 
   onMount(() => {
-      // animate(".read-the-docs");
       animate('.hidden');
   })
 </script>
 
-<main>
-  <TopNav />
 
-  <h1>Hello {'{world}'}!<br />👋</h1>
+<TopNav />
 
-  <section class="top-intro font-code hidden">
-    <div class="text">
-      <h2>Who Am I?</h2>
-      With 15+ years of dev experience<br />
-      I'm an online educator,<br />
-      mentor,<br />
-      and consultant--<br />
-      teaching practical,<br />
-      advanced topics<br />
-      to developers like you on<br />
-      how to write:<br />
-      ✅ maintainable JS code<br />
-      ✅ scalable web apps<br />
-      ...yup that's about it! 🎤⤵<br />
-    </div>
-    <div>
-      <img
-        src="/mug-ovals1.webp"
-        class="mug-shot svelte"
-        alt="author mug-shot"
-      />
-    </div>
-  </section>
+<section>
+  <h1>Hello {'{world}'}!<span class="hand">👋</span></h1>
+</section>
 
-  <div class="card">
-    <Counter label="Visitors" />
-  </div>
+<WhoAmI />
 
-  <p class="read-the-docs hidden">
-    Check out <a
-      href="https://hashnode.com/@srjsdev"
-      target="_blank"
-      rel="noreferrer">Hashnode</a
-    > blog posts!
-  </p>
-</main>
+<section>
+  How to write:<br />
+  ✅ maintainable JS code<br />
+  ✅ scalable web apps<br />
+  ...yup that's about it! 🎤⤵<br />
+</section>
+
+<section>
+  <h2>I share the most important tools, tips, and techniques of top Sr. JS devlopers.</h2>
+  <h2>It's consise, easy to follow, and quick to apply.</h2>
+</section>
+
+<WinWin />
+
+<div class="card">
+  <Counter label="Visitors" />
+</div>
+
+<p class="read-the-docs hidden">
+  Check out <a
+    href="https://hashnode.com/@srjsdev"
+    target="_blank"
+    rel="noreferrer">Hashnode</a
+  > blog posts!
+</p>
+
 
 <style>
-  section.top-intro {
-    display: flex;
+  .hand {
+    display: inline-block;
+    font-size: 4rem;
+    animation: var(--animation-pulse);
+  }
 
-  }
-  section.top-intro div {
-    flex: 1;
-  }
-  section.top-intro .text {
-    max-width: 50vw;
-    margin: 0 auto;
-    text-align: right;
-    transform: translateX(-25%);
-  }
-  .mug-shot {
-    height: 20em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: 0.3s all;
-  }
-  .mug-shot:hover {
-    filter: drop-shadow(0 0 2em #ddd);
-    transform: scale(1.1);
-  }
   .read-the-docs {
     color: #888;
   }

@@ -1,3 +1,8 @@
+/* @import "https://unpkg.com/open-props"; */
+@import "https://unpkg.com/open-props@1.5.0/open-props.min.css";
+/* @import 'https://unpkg.com/open-props/normalize.min.css'; */
+@import "https://unpkg.com/open-props/animations.min.css";
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -13,6 +18,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+section {
+  padding-bottom: 2rem;
+  margin: auto;
+  width: 80vw;
+  max-width: 960px;
+  font-size: 2rem;
+  line-height: 2.8rem;
 }
 
 a {
@@ -88,7 +102,6 @@ button:focus-visible {
   }
 }
 
-
 .hidden {
   opacity: 0;
   filter: blur(5px);
@@ -105,4 +118,10 @@ button:focus-visible {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
+
+pre > code {
+  box-shadow: var(--shadow-6);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-2);
 }

@@ -1,6 +1,6 @@
 const options = {
     // rootMargin: '50px 0px 0px 0px',
-    threshold: 0.5,
+    threshold: 0.1,
 };
 const observer = new IntersectionObserver((entries, self) => {
     entries.forEach((element, i) => {

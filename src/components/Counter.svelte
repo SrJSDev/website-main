@@ -8,5 +8,5 @@
 
 <h4>Interactivator v2.0 👇</h4>
 <button on:click={increment}>
-  {label} is: {count}
+  {label}: {count}
 </button>
