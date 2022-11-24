@@ -31,7 +31,8 @@
 
 <section>
   <h2>I share the most important tools, tips, and techniques of top Sr. JS devlopers.</h2>
-  <h2>It's consise, easy to follow, and quick to apply.</h2>
+  <h2>All my content is concise, simple to follow, and quick to apply.</h2>
+  <h2>If you stick to it, you'll feel that AMAZING dopamine rush too! And the confidence to build a high-quality system.</h2>
 </section>
 
 <WinWin />
